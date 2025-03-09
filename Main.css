@@ -1,5 +1,6 @@
-body {
+body, html {
     margin: 0;
+    height: 100%;
 }
 h1 {
     display: inline;
@@ -13,7 +14,7 @@ li {
     display: inline;
     padding-right: 10px;
 }
-.nav2 {
+ .nav2 {
     float: right;
     margin-right: 10px; 
 }
@@ -24,29 +25,36 @@ li {
     height: 50px;
     color: white;
     z-index: 1;
-}
-.boxes {
-    position: absolute;
-    top: 20%;
-    left: 10%
-}
-.boxList li {
-    padding: 20px;
+} 
+ ul#flex-container {
+    position:absolute;
+    top: 10%;
+    list-style-type: none;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: right;
+    left: 15%;
+    right: 15%;
+
+ }
+ ul#flex-container li {
+    flex-grow: 1;
+    width: 250px;
     border-color:rgb(60, 186, 60);
     border-style:solid;
     border-radius:10px;
-    float: left;
     margin-left: 20px;
     margin-top: 20px;
-    width: 300px;
-    height: 580px;   
-}
-input {
+    padding: 20px;
+
+ }
+ input {
     width: 100%;
     padding: 5px 0px 5px 0px;
     color: white;
     background-color: rgb(60, 186, 60);
     border-style:none;
     border-radius: 5px;
-    font-family:'Segoe UI'
+    font-family:'Segoe UI';
 }
